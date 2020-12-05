@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cream"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/birumuda"
+            android:gravity="center"
+            android:text="SDN Pelita Bangsa"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/judul2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Nilai Rapot Siswa"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Nama Siswa"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul2" />
+
+        <EditText
+            android:id="@+id/editTextNomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="NISN Siswa"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNama" />
+
+
+        <EditText
+            android:id="@+id/editTextKelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Kelas Siswa"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomer" />
+
+        <TextView
+            android:id="@+id/textViewSemester"
+            android:layout_width="209dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="6dp"
+            android:text="Pilih Semester"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextKelas" />
+
+        <Spinner
+            android:id="@+id/spinnerSemester"
+            android:layout_width="200dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="4dp"
+            android:entries="@array/semester"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSemester" />
+
+        <EditText
+            android:id="@+id/editTextNilaiHadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="Nilai Kehadiran"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSemester" />
+
+        <EditText
+            android:id="@+id/editTextNilaiTugas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Nilai Tugas"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNilaiHadir" />
+
+        <EditText
+            android:id="@+id/editTextNilaiUTS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Nilai UTS"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNilaiTugas" />
+
+        <EditText
+            android:id="@+id/editTextNilaiUAS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Nilai UAS"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNilaiUTS" />
+
+
+        <TextView
+            android:id="@+id/textViewNilaiAkhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextNilaiUAS"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="12dp"
+            android:text="Nilai Akhir : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNilaiUAS" />
+
+        <TextView
+            android:id="@+id/textViewHasilNilaiAkhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextNilaiUAS"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewNilaiAkhir"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNilaiUAS" />
+
+        <Button
+            android:id="@+id/bSimpan"
+            android:layout_width="120dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/biru"
+            android:text="Simpan Data"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.814"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNilaiUAS" />
+
+        <TextView
+            android:id="@+id/textViewSiswa"
+            android:layout_width="135dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="LIHAT DATA"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNilaiUAS" />
+
+        <Button
+            android:id="@+id/bHitung"
+            android:layout_width="119dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="76dp"
+            android:background="@color/red"
+            android:text="Hitung Nilai"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.565"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNilaiUAS" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

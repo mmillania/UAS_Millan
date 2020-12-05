@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Edit Data Siswa"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Siswa" />
+
+    <EditText
+        android:id="@+id/editTextNomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NISN Siswa" />
+    <EditText
+        android:id="@+id/editTextKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kelas Siswa" />
+    <TextView
+        android:id="@+id/textViewSemester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Semester"
+        android:padding="6dp"
+        android:text="Semester"/>
+
+    <Spinner
+        android:id="@+id/spinnerSemester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/semester" />
+
+    <EditText
+        android:id="@+id/editTextNilaiHadir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai Kehadiran"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextNilaiTugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai Tugas"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextNilaiUTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai UTS"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/editTextNilaiUAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai UAS"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewNilaiAkhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nilai Akhir : "/>
+
+    <TextView
+        android:id="@+id/textViewHasilNilaiAkhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:text="Update Data" />
+
+</LinearLayout>

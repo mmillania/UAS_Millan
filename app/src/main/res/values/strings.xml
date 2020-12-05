@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UAS_Millan</string>
+    <array name="semester">
+        <item>Ganjil</item>
+        <item>Genap</item>
+    </array>
+</resources>
